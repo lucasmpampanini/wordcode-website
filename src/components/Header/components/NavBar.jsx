@@ -1,8 +1,8 @@
 import React from 'react'
-import { styled } from '@mui/system';
+import { Box, styled } from '@mui/system';
 
 
-const NavStyle = styled('nav')(({ theme }) => ({
+const NavStyle = {
     padding: 0,
     '& > ul': {
         margin: 0,
@@ -14,8 +14,15 @@ const NavStyle = styled('nav')(({ theme }) => ({
     '& > li': {
         position: 'relative',
     },
+    display: { 
+        xs: 'none',
+        sm: 'none', 
+        md: 'block',
+        lg: 'block' 
+    }
+ 
   
-}));
+}
 
 const LinkNavBarStyle = styled('a')(({ theme }) => ({
     display: 'flex',
@@ -58,7 +65,7 @@ const GetStartedStyle = styled('a')(({ theme }) => ({
 
 export default function NavBar() {
     return (
-        <NavStyle>
+        <Box component='nav' sx={NavStyle}>
             <ul>
                 <LiStyle><LinkNavBarStyle href="index.html">Home</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="services.html">Services</LinkNavBarStyle></LiStyle>
@@ -68,6 +75,6 @@ export default function NavBar() {
                 <LiStyle><LinkNavBarStyle href="contact.html">Contact</LinkNavBarStyle></LiStyle>
                 <LiStyle><GetStartedStyle href="index.html">Get Started</GetStartedStyle></LiStyle>
             </ul>
-        </NavStyle>
+        </Box>
     )
 }

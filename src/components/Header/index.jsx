@@ -1,7 +1,8 @@
 import { display } from '@mui/system';
 import React, { useEffect, useState } from 'react'
 import HeaderBase from './components/HeaderBase/HeaderBase';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/NavBar';
+import NavBarMobile from './components/NavBarMobile';
 
 
 export default function Header() {
@@ -23,7 +24,8 @@ export default function Header() {
     return (
         <div>
             <HeaderBase scrolledShow={scrolledShow}>
-                <NavBar  />
+                <NavBar />
+                <NavBarMobile />
             </HeaderBase>
         </div>
     )
