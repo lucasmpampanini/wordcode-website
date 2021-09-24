@@ -22,7 +22,7 @@ const theme = createTheme({
     fontFamily: [
       'Poppins',
       'Raleway'
-    ].join(','),
+    ],
   },
   breakpoints: {
     values: {

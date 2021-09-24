@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, styled } from '@mui/system';
+import ButtonGetStartedStyle from '../../ButtonGetStartedStyle';
 
 
 const NavStyle = {
@@ -29,7 +30,7 @@ const LinkNavBarStyle = styled('a')(({ theme }) => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: '10px 0 10px 30px',
-    fontFamily: theme.typography.fontFamily,
+    fontFamily: theme.typography.fontFamily[0],
     fontSize: '15px',
     fontWeight: 500,
     color: theme.palette.secondary.main, 
@@ -47,20 +48,7 @@ const LiStyle = styled('li')(({ theme }) => ({
    
 }));
 
-const GetStartedStyle = styled('a')(({ theme }) => ({
-    background: theme.palette.primary.main,
-    padding: '8px 25px',
-    marginLeft: '30px',
-    borderRadius: '4px',
-    fontWeight: 400,
-    color: theme.palette.secondary.main,
-    textDecoration: 'none',
-    transition: '0.3s',
-    '&:hover': {
-        color: theme.palette.secondary.main,
-        background: theme.palette.primary.second,
-    },   
-}));
+
 
 
 export default function NavBar() {
@@ -73,7 +61,7 @@ export default function NavBar() {
                 <LiStyle><LinkNavBarStyle href="pricing.html">Pricing</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="blog.html">Blog</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="contact.html">Contact</LinkNavBarStyle></LiStyle>
-                <LiStyle><GetStartedStyle href="index.html">Get Started</GetStartedStyle></LiStyle>
+                <LiStyle><ButtonGetStartedStyle>Compre Agora</ButtonGetStartedStyle></LiStyle>
             </ul>
         </Box>
     )

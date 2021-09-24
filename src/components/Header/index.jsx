@@ -1,4 +1,3 @@
-import { display } from '@mui/system';
 import React, { useEffect, useState } from 'react'
 import HeaderBase from './components/HeaderBase/HeaderBase';
 import NavBar from './components/NavBar';
