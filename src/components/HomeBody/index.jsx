@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutRow from './components/AboutRow'
+import AboutRow from '../AboutRow'
 import ServicesRow from './components/ServicesRow'
 
 

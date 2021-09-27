@@ -28,7 +28,7 @@ export default function HeaderBase(props) {
         <HeaderStyle className="fixed-top d-flex align-items-center" id={ props.scrolledShow ? style.headerScrolled : ''}>
             <div className="container d-flex align-items-center">
                
-                <LogoStyle href="index.html" className="logo me-auto"><img src="/wordCode-b.png" className="img-fluid" /></LogoStyle>
+                <LogoStyle href="/" className="logo me-auto"><img src="/wordCode-b.png" className="img-fluid" /></LogoStyle>
                 
                 {props.children}
 

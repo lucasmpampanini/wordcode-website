@@ -1,7 +1,7 @@
 import React from 'react'
 import {BsCheckAll} from 'react-icons/bs'
 import { styled } from '@mui/system';
-import theme from '../../../theme'
+import theme from '../theme'
 import { Fade } from '@mui/material';
 
 const DivUlinContainerStyled =  styled('div')(({ theme }) => ({
