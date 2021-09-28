@@ -10,6 +10,7 @@ const FooterStyle = {
     padding: '0 0 30px 0',
     color: '#fff',
     fontSize: '14px',
+    marginTop: 80,
 }
 
 const FooterTopStyle = {

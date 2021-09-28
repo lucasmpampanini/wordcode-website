@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutRow from '../AboutRow'
-import ServicesRow from './components/ServicesRow'
+import ServicesRow from '../ServicesRow'
 
 
 

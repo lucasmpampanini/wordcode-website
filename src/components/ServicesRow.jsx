@@ -1,8 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/system'
 import {FaCashRegister} from 'react-icons/fa'
-import theme from '../../../theme';
-
+import theme from '../theme'
 
 
 const IconBoxStyled = styled('div')(({ theme }) => ({

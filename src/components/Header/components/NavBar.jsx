@@ -57,7 +57,7 @@ export default function NavBar() {
             <ul>
                 <LiStyle><LinkNavBarStyle href="/">Home</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="services.html">Services</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="portfolio.html">Portfolio</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="pricing.html">Pricing</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="blog.html">Blog</LinkNavBarStyle></LiStyle>
