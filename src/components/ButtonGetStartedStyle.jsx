@@ -8,13 +8,16 @@ const GetStartedStyle = styled('a')(({ theme }) => ({
     padding: '8px 25px',
     marginLeft: '30px',
     borderRadius: '4px',
+    fontFamily: theme.typography.fontFamily[1],
+    fontSize: '16px',
     fontWeight: 400,
-    color: theme.palette.secondary.main,
+    fontWeight: 600,
+    color: '#fff',
     textDecoration: 'none',
     transition: '0.3s',
     cursor: 'pointer',
     '&:hover': {
-        color: theme.palette.secondary.main,
+        color: '#fff',
         background: theme.palette.primary.second,
     },   
 }));

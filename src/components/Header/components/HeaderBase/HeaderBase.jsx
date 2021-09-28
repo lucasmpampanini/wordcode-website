@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const HeaderStyle = styled('header')(({ theme }) => ({
     color: theme.palette.primary.contrastText,
-    background: '#f0f0f0',
+    background: '#fff',
     transition: 'all 0.5s',
     zIndex: 997,
     padding: '20px 0',
