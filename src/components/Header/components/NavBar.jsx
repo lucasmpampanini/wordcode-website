@@ -58,10 +58,10 @@ export default function NavBar() {
                 <LiStyle><LinkNavBarStyle href="/">Home</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="portfolio.html">Portfolio</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="">Portfolio</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="/preco">Preço</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="blog.html">Blog</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="contact.html">Contact</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle>
                 <LiStyle><ButtonGetStartedStyle>Compre Agora</ButtonGetStartedStyle></LiStyle>
             </ul>
         </Box>

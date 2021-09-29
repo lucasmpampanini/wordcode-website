@@ -88,7 +88,7 @@ export default function Hero() {
                         <Slide direction='down' in={slideChange1} timeout={1500}>
                             <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>WordCode</Typography>
                         </Slide>
-                        <Slide direction="dow" in={slideChange1} timeout={1500}>
+                        <Slide direction="down" in={slideChange1} timeout={1500}>
                             <Typography variant='p' component='p' >First slide label</Typography>
                         </Slide>
                         <Slide direction='up' in={slideChange1} timeout={1500}>
@@ -108,7 +108,7 @@ export default function Hero() {
                         <Slide direction='down' in={slideChange2} timeout={1500}>
                             <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>First slide label</Typography>
                         </Slide>
-                        <Slide direction="dow" in={slideChange2} timeout={1500}>
+                        <Slide direction="down" in={slideChange2} timeout={1500}>
                             <Typography variant='p' component='p'>First slide label</Typography>
                         </Slide>
                         <Slide direction='up' in={slideChange2} timeout={1500}>
