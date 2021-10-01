@@ -1,8 +1,7 @@
 import React from 'react'
 import { styled } from '@mui/system'
-import theme from '../../theme';
 import {FaFacebookF, FaInstagram, FaSkype, FaLinkedinIn, FaChevronRight, FaWhatsapp} from 'react-icons/fa'
-
+import Logo from '../Logo'
 
 
 const FooterStyle = {
@@ -20,13 +19,6 @@ const FooterTopStyle = {
 
 const FooterInfoStyled = styled('div')(({ theme }) => ({
     marginBottom: '30px',
-    '& > h3': {
-        fontSize: '24px',
-        margin: '0 0 20px 0',
-        padding: '2px 0 2px 0',
-        lineHeight: 1,
-        fontWeight: 700,
-    },
     '& > p': {
         fontSize: '14px',
         lineHeight: '24px',
@@ -109,6 +101,8 @@ const CopyrightsStyle = {
 
 
 export default function Footer() {
+
+
     return (
         <footer style={FooterStyle}>
             <div style={FooterTopStyle}>
@@ -117,12 +111,11 @@ export default function Footer() {
 
                 <div className="col-lg-3 col-md-6">
                     <FooterInfoStyled >
-                        <h3>WordCode</h3>
+                        <Logo branco fontSize='32px'/>
                         <p>
-                            A108 Adam Street <br/>
-                            NY 535022, USA<br/><br/>
-                            <strong>Phone:</strong> +1 5589 55488 55<br/>
-                            <strong>Email:</strong> info@example.com<br/>
+                            
+                            <strong>WhatsApp:</strong> (11) 94683-4920<br/>
+                            <strong>Email:</strong> contato@wordcode.com.br<br/>
                         </p>
                         <SocialLinksStyle className="mt-3">
                             <a href="#" className="facebook"><FaFacebookF style={IconStyle}/></a>
@@ -134,24 +127,23 @@ export default function Footer() {
                 </div>
 
                 <FooterLinksStyled className="col-lg-2 col-md-6">
-                    <h4>Useful Links</h4>
+                    <h4>Links Úteis</h4>
                     <ul>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Home</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">About us</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Services</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Terms of service</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Privacy policy</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="/">Home</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="/sobre_nos">Sobre Nós</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="/servicos">Serviços</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="">Termos gerais de serviço</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="">Politica de proteção de dados</a></li>
                     </ul>
                 </FooterLinksStyled>
 
                 <FooterLinksStyled className="col-lg-3 col-md-6">
-                    <h4>Our Services</h4>
+                    <h4>Nossos Serviços</h4>
                     <ul>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Web Design</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Web Development</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Product Management</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Marketing</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Graphic Design</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Sitemas Web</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Desenvolvimento Web</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Automatização De Processos</a></li>
+                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Raspagem De Dados Da Web</a></li>
                     </ul>
                 </FooterLinksStyled>
 
@@ -169,7 +161,7 @@ export default function Footer() {
 
             <div className="container">
                 <div style={CopyrightsStyle}>
-                    &copy; Copyright <strong><span>WordCode</span></strong>. All Rights Reserved
+                    Copyright &copy; 2021 <strong><span>WordCode</span></strong>. All Rights Reserved
                 </div>
             </div>
         </footer>

@@ -4,7 +4,7 @@ import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
 import { Slide, Typography, Button } from '@mui/material'
 import theme from '../../theme'
-
+import Logo from '../Logo'
 
 const StyledHero = {
     width: '100%',
@@ -69,7 +69,7 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange0} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Bem-Vindo a WordCode</Typography>
+                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Bem-Vindo a <Logo branco fontSize='60px'/> </Typography>
                         </Slide>
                         <Slide direction='up' in={slideChange0} timeout={1500}>
                             <Button variant="contained">Saiba mais</Button>
@@ -86,7 +86,7 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange1} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>WordCode</Typography>
+                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}><Logo branco fontSize='42px'/></Typography>
                         </Slide>
                         <Slide direction="down" in={slideChange1} timeout={1500}>
                             <Typography variant='p' component='p' >First slide label</Typography>

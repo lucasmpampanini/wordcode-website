@@ -102,13 +102,14 @@ export default function NavBarMobile() {
             >
                 <Box component='nav' sx={NavStyle}>
                     <ul>
-                        <LiStyle><LinkNavBarStyle href="index.html">Home</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="services.html">Services</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="portfolio.html">Portfolio</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="pricing.html">Pricing</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="blog.html">Blog</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="contact.html">Contact</LinkNavBarStyle></LiStyle>
-                        <LiStyle style={{marginTop: 20}}><GetStartedStyle href="index.html">Get Started</GetStartedStyle></LiStyle>
+                        <LiStyle><LinkNavBarStyle href="/">Home</LinkNavBarStyle></LiStyle>
+                        <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle>
+                        <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle>
+                        <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle>
+                        <LiStyle><LinkNavBarStyle href="/preco">Preço</LinkNavBarStyle></LiStyle>
+                        {/* <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle> */}
+                        <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle>
+                        <LiStyle style={{marginTop: 20}}><GetStartedStyle>Compre Agora</GetStartedStyle></LiStyle>
                     </ul>
                 </Box>
                 

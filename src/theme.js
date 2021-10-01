@@ -20,9 +20,10 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Poppins',
-      'Raleway'
+      `'Poppins'`,
+      `'Raleway'`,
     ],
+    fontFamilyLogo: [ `'Kaushan Script'`,]
   },
   breakpoints: {
     values: {
