@@ -118,8 +118,6 @@ export default function Footer() {
                             <strong>Email:</strong> contato@wordcode.com.br<br/>
                         </p>
                         <SocialLinksStyle className="mt-3">
-                            <a href="#" className="facebook"><FaFacebookF style={IconStyle}/></a>
-                            <a href="#" className="instagram"><FaInstagram style={IconStyle}/></a>
                             <a href="#" className="skype"><FaSkype style={IconStyle}/></a>
                             <a href="#" className="linkedin"><FaLinkedinIn style={IconStyle}/></a>
                         </SocialLinksStyle>
@@ -130,8 +128,6 @@ export default function Footer() {
                     <h4>Links Úteis</h4>
                     <ul>
                         <li><FaChevronRight style={IconLiStyle}/> <a href="/">Home</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="/sobre_nos">Sobre Nós</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="/servicos">Serviços</a></li>
                         <li><FaChevronRight style={IconLiStyle}/> <a href="">Termos gerais de serviço</a></li>
                         <li><FaChevronRight style={IconLiStyle}/> <a href="">Politica de proteção de dados</a></li>
                     </ul>
@@ -139,6 +135,7 @@ export default function Footer() {
 
                 <FooterLinksStyled className="col-lg-3 col-md-6">
                     <h4>Nossos Serviços</h4>
+                    <p>Entre em contato</p>
                     <ul>
                         <li><FaChevronRight style={IconLiStyle}/> <a href="#">Sitemas Web</a></li>
                         <li><FaChevronRight style={IconLiStyle}/> <a href="#">Desenvolvimento Web</a></li>

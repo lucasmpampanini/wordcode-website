@@ -19,7 +19,7 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
         marginTop: 30,
         padding: '20px',
         textAlign: 'center',
-        boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.12)',
+        boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)',
         borderRadius: '5px',
         position: 'relative',
         overflow: 'hidden',
@@ -102,7 +102,7 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
                 {itensNa}
               </ul>
               <div className="btn-wrap">
-                <a href="#" className="btn-buy">Comprar</a>
+                <a href="#" className="btn-buy">Pedir Modelo Sem Compromisso</a>
               </div>
             </BoxStyled>
         </div>
