@@ -1,49 +1,32 @@
 import React from 'react'
 import PricingCard from './components/PricingCard'
 
+
 export default function Pricing() {
     return (
-        <div className="container">
-            <div className="row">
+        <div className="container" >
+            <div className="row" style={{marginTop: 120, display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
                 <PricingCard  
                     obj={{
                         titulo: 'Site Institucional',
                         preco: 250,
                     }}
-                    lista={[ 'Responsivo', 'Hospedagem gratuita', 'até 5 paginas']} 
-                    listaNa={['dominio']}
+                    lista={[ 'Responsivo', '1 Ano de Hospedagem', 'Botão WhatsApp', 'Integração Redes Sociais', 'Banco de Imagens']} 
+                    listaNa={['Dominio .com.br']}
                     
                 />
 
                 <PricingCard  
                     obj={{
-                        titulo: 'Site Para Imobiliaria',
-                        preco: 495,
+                        titulo: 'Site Institucional + Bolg',
+                        preco: 450,
                     }}
-                    lista={[ 'Dominio', 'Responsivo', 'Hospedagem gratuita', 'até 5 paginas']} 
+                    lista={[ 'Dominio .com.br', 'Responsivo', '1 Ano de Hospedagem', 'Banco de Imagens', 'Botão WhatsApp', 'Blog', 'Area de administração']} 
                     destacar
                     
                 />
 
-                <PricingCard  
-                    obj={{
-                        titulo: 'Site Para Petshop',
-                        preco: 345,
-                    }}
-                    lista={[ 'Dominio', 'Responsivo', 'Hospedagem gratuita', 'até 5 paginas']} 
-                    
-                    
-                />
-
-                <PricingCard  
-                    obj={{
-                        titulo: 'Site Para Academia',
-                        preco: 345,
-                    }}
-                    lista={[ 'Dominio', 'Responsivo', 'Hospedagem gratuita', 'até 5 paginas']} 
-                    
-                    
-                />
+              
 
             </div>
         </div>

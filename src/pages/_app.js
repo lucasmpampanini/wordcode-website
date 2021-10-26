@@ -20,8 +20,9 @@ export default function MyApp(props) {
         <title>WordCode</title>
         <meta content="" name="description" />
         <meta content="" name="keywords" />
-        {/* <link href="assets/img/favicon.png" rel="icon" />
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> */}
+
+        <link href="/logo-105-wordcode.png" rel="icon" />
+        <link href="/logo-105-wordcode.png" rel="apple-touch-icon" />
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>

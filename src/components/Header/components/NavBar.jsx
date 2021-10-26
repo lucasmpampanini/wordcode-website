@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, styled } from '@mui/system';
+import { Button } from '@mui/material'
 import ButtonGetStartedStyle from '../../ButtonGetStartedStyle';
 
 
@@ -55,14 +56,14 @@ export default function NavBar() {
     return (
         <Box component='nav' sx={NavStyle}>
             <ul>
-                <LiStyle><LinkNavBarStyle href="/">Home</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle>
-                <LiStyle><LinkNavBarStyle href="/preco">Preço</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="/">Site Institucional</LinkNavBarStyle></LiStyle>
+                {/* <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle> */}
+                {/* <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle> */}
+                {/* <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle> */}
+                <LiStyle><LinkNavBarStyle href="#pricingSection">Preço</LinkNavBarStyle></LiStyle>
                 {/* <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle> */}
-                <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle>
-                <LiStyle><ButtonGetStartedStyle>Compre Agora</ButtonGetStartedStyle></LiStyle>
+                {/* <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle> */}
+                <LiStyle><Button style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
             </ul>
         </Box>
     )

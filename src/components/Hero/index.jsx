@@ -86,10 +86,10 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange1} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}><Logo branco fontSize='42px'/></Typography>
+                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Site Institucional a partir de R$ 250</Typography>
                         </Slide>
                         <Slide direction="down" in={slideChange1} timeout={1500}>
-                            <Typography variant='p' component='p' >First slide label</Typography>
+                            <Typography variant='p' component='p' >Sites responsivos, com botão de interação ao whatsapp e outras redes sociais.</Typography>
                         </Slide>
                         <Slide direction='up' in={slideChange1} timeout={1500}>
                             <Button variant="contained">Saiba mais</Button>
@@ -106,13 +106,13 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange2} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>First slide label</Typography>
+                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Peça um modelo para seu negócio sem compromisso.</Typography>
                         </Slide>
                         <Slide direction="down" in={slideChange2} timeout={1500}>
-                            <Typography variant='p' component='p'>First slide label</Typography>
+                            <Typography variant='p' component='p'>Nós escolhemos as melhores imagens em bancos de imagens mais usados.</Typography>
                         </Slide>
                         <Slide direction='up' in={slideChange2} timeout={1500}>
-                            <Button variant="contained">Saiba mais</Button>
+                            <Button style={{margin: 20, color: '#fff'}} variant="contained">fale agora pelo whatsapp</Button>
                         </Slide>
                     </div>
                 </Carousel.Item>
