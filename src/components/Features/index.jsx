@@ -62,6 +62,7 @@ export default function Features() {
                     >
                         <Tab label='Unde praesentium sed' id={0} />
                         <Tab label='Modi sit est' id={1} />
+                        <Tab label='Modi sit est' id={2} />
                     </Tabs>
                 </div>
                 <div className="col-lg-9 mt-4 mt-lg-0">
