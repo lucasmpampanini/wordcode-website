@@ -98,8 +98,8 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
               <h3>{obj.titulo}</h3>
               <h4><sup>R$</sup>{obj.preco}<span> / Uni</span></h4>
               <ul>
-                {itensNa}
                 {itens}
+                {itensNa}
               </ul>
               <div className="btn-wrap">
                 <a href="#" className="btn-buy">Comprar</a>

@@ -51,41 +51,38 @@ export default function Features() {
 
     return (
         <div>
-            <div className="container">
 
-               <SectionTitle title='Features' paragraph='Check our Features' />
-
-               <div className="row">
-                    <div className="col-lg-3">
-                        <Tabs
-                            orientation='vertical'
-                            variant='scrollable'
-                            value={value}
-                            onChange={handleChange}
-                        >
-                            <Tab label='Unde praesentium sed' id={0} />
-                            <Tab label='Modi sit est' id={1} />
-                        </Tabs>
-                    </div>
-                    <div className="col-lg-9 mt-4 mt-lg-0">
-                        <Conteudo value={value} index={0}>
-                            <h3 style={H3Style}>Architecto ut aperiam autem id</h3>
-                            <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                            <p style={PStyle} >Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                        </Conteudo>
-                        <Conteudo value={value} index={1}>
-                            <h3 style={H3Style}>Et blanditiis nemo veritatis excepturi</h3>
-                            <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                            <p style={PStyle}>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                        </Conteudo>
-                    </div>
+            <div className="row">
+                <div className="col-lg-3">
+                    <Tabs
+                        orientation='vertical'
+                        variant='scrollable'
+                        value={value}
+                        onChange={handleChange}
+                    >
+                        <Tab label='Unde praesentium sed' id={0} />
+                        <Tab label='Modi sit est' id={1} />
+                    </Tabs>
                 </div>
-               
-               
-
-               
+                <div className="col-lg-9 mt-4 mt-lg-0">
+                    <Conteudo value={value} index={0}>
+                        <h3 style={H3Style}>Architecto ut aperiam autem id</h3>
+                        <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                        <p style={PStyle} >Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                    </Conteudo>
+                    <Conteudo value={value} index={1}>
+                        <h3 style={H3Style}>Et blanditiis nemo veritatis excepturi</h3>
+                        <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                        <p style={PStyle}>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    </Conteudo>
+                    <Conteudo value={value} index={2}>
+                        <h3 style={H3Style}>Et blanditiis nemo veritatis excepturi</h3>
+                        <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                        <p style={PStyle}>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                    </Conteudo>
+                </div>
+            </div>
               
-        </div>
     </div>
     )
 }

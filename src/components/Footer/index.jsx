@@ -147,13 +147,7 @@ export default function Footer() {
                     </ul>
                 </FooterLinksStyled>
 
-                <FooterLinksStyled className="col-lg-4 col-md-6">
-                    <h4>Compre um modelo</h4>
-                    <p>Fale conosco pelo WhatsApp</p>
-                    <SocialLinksStyle className="mt-3">
-                        <a href="#" ><FaWhatsapp style={{color: '#fff', fontSize: 20}}/></a>
-                    </SocialLinksStyle>
-                </FooterLinksStyled>
+               
 
                 </div>
             </div>

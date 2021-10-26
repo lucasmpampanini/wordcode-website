@@ -3,6 +3,7 @@ import {BsCheckAll} from 'react-icons/bs'
 import { styled } from '@mui/system';
 import theme from '../theme'
 import { Fade } from '@mui/material';
+import Logo from './Logo';
 
 const DivUlinContainerStyled =  styled('div')(({ theme }) => ({
     '& > ul': {
@@ -39,7 +40,7 @@ export default function AboutRow() {
                 <div className="container">
                     <div className="row content">
                     <div className="col-lg-6">
-                        <h2 style={AboutRowStyledH2}>Eum ipsam laborum deleniti velitena</h2>
+                        <h2><Logo cinza fontSize='58px' /></h2>
                         <h3 style={AboutRowStyledH3}>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
                     </div>
                     <DivUlinContainerStyled className="col-lg-6 pt-4 pt-lg-0">

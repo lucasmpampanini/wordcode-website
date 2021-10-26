@@ -71,9 +71,7 @@ export default function Hero() {
                         <Slide direction='down' in={slideChange0} timeout={1500}>
                             <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Bem-Vindo a <Logo branco fontSize='60px'/> </Typography>
                         </Slide>
-                        <Slide direction='up' in={slideChange0} timeout={1500}>
-                            <Button variant="contained">Saiba mais</Button>
-                        </Slide>
+                       
                        
                     </div>
                 </Carousel.Item>
