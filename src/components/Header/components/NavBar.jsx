@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, styled } from '@mui/system';
 import { Button } from '@mui/material'
-import ButtonGetStartedStyle from '../../ButtonGetStartedStyle';
 
 
 const NavStyle = {
@@ -56,7 +55,7 @@ export default function NavBar() {
     return (
         <Box component='nav' sx={NavStyle}>
             <ul>
-                <LiStyle><LinkNavBarStyle href="/">Site Institucional</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="#servicesSection">Site Institucional</LinkNavBarStyle></LiStyle>
                 {/* <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle> */}
                 {/* <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle> */}
                 {/* <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle> */}

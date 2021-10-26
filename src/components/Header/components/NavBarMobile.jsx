@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Drawer, IconButton } from '@mui/material';
 import { Box, styled } from '@mui/system';
 import { AiOutlineMenu } from 'react-icons/ai'
+import { Button } from '@mui/material'
 
 
 const StyledDrawer = {
@@ -102,14 +103,14 @@ export default function NavBarMobile() {
             >
                 <Box component='nav' sx={NavStyle}>
                     <ul>
-                        <LiStyle><LinkNavBarStyle href="/">Home</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle>
-                        <LiStyle><LinkNavBarStyle href="/preco">Preço</LinkNavBarStyle></LiStyle>
+                        <LiStyle><LinkNavBarStyle href="#servicesSection">Site Institucional</LinkNavBarStyle></LiStyle>
+                        {/* <LiStyle><LinkNavBarStyle href="/sobre_nos">Sobre Nós</LinkNavBarStyle></LiStyle> */}
+                        {/* <LiStyle><LinkNavBarStyle href="/servicos">Serviços</LinkNavBarStyle></LiStyle> */}
+                        {/* <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle> */}
+                        <LiStyle><LinkNavBarStyle href="#pricingSection">Preço</LinkNavBarStyle></LiStyle>
                         {/* <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle> */}
-                        <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle>
-                        <LiStyle style={{marginTop: 20}}><GetStartedStyle>Compre Agora</GetStartedStyle></LiStyle>
+                        {/* <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle> */}
+                        <LiStyle style={{marginTop: 20}}><Button style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
                     </ul>
                 </Box>
                 

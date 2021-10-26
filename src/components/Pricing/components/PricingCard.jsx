@@ -16,6 +16,7 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
     
     const BoxStyled = styled('div')(({ theme })=>({
         background: '#fff',
+        marginTop: 30,
         padding: '20px',
         textAlign: 'center',
         boxShadow: '0px 0px 4px rgba(0, 0, 0, 0.12)',

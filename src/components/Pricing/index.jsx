@@ -4,8 +4,7 @@ import PricingCard from './components/PricingCard'
 
 export default function Pricing() {
     return (
-        <div className="container" >
-            <div className="row" style={{marginTop: 120, display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
+            <div className="row" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
                 <PricingCard  
                     obj={{
                         titulo: 'Site Institucional',
@@ -29,7 +28,6 @@ export default function Pricing() {
               
 
             </div>
-        </div>
 
     )
 }
