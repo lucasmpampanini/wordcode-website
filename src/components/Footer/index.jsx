@@ -144,6 +144,12 @@ export default function Footer() {
                     </ul>
                 </FooterLinksStyled>
 
+                <FooterLinksStyled className="col-lg-3 col-md-6">
+                    <h4>Entre em contato pelo WhatsApp</h4>
+                    <p>É só direcionar a câmera do seu celular para o código QR</p>
+                    <img src="/qrwa.jpeg" alt="" />
+                </FooterLinksStyled>
+
                
 
                 </div>
