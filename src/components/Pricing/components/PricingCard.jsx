@@ -70,6 +70,9 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
             background: '#f8f8f8',
             textAlign: 'center',
         },
+        '& > .btn-wrap > p': {
+            fontSize: '12px',
+        },
         '& > .btn-wrap > .btn-buy': {
             textDecoration: 'none',
             background: theme.palette.primary.main,
@@ -103,6 +106,7 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
               </ul>
               <div className="btn-wrap">
                 <a href="#" className="btn-buy">Pedir Modelo Sem Compromisso</a>
+                <p>*Aplicável somente no primeiro ano</p>
               </div>
             </BoxStyled>
         </div>

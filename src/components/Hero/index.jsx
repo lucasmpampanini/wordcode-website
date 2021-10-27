@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Slide, Typography, Button } from '@mui/material'
 import theme from '../../theme'
 import Logo from '../Logo'
+import { styled } from '@mui/material/styles' 
 
 const StyledHero = {
     width: '100%',
@@ -31,12 +32,15 @@ const StyledCarouselInner = {
     }
 }
 
-const StyledCarouselInnerH2 = {
+const StyledCarouselInnerH2 =  styled('h2')(({ theme }) => ({
+    [theme.breakpoints.down('md')]: {
+        fontSize: '28px'
+    } ,
     fontFamily: theme.typography.fontFamily[1],
     marginBottom: '20px',
     fontSize: '48px',
     fontWeight: 700,
-}
+}))
 
 
 export default function Hero() {
@@ -69,7 +73,7 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange0} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Bem-Vindo a <Logo branco fontSize='60px'/> </Typography>
+                            <StyledCarouselInnerH2>Bem-Vindo a <Logo branco fontSizeDow={30} fontSize={60}/> </StyledCarouselInnerH2>
                         </Slide>
                        
                        
@@ -84,13 +88,10 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange1} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Site Institucional a partir de R$ 250</Typography>
+                            <StyledCarouselInnerH2>Site Institucional a partir de R$ 250</StyledCarouselInnerH2>
                         </Slide>
                         <Slide direction="down" in={slideChange1} timeout={1500}>
                             <Typography variant='p' component='p' >Sites responsivos, com botão de interação ao whatsapp e outras redes sociais.</Typography>
-                        </Slide>
-                        <Slide direction='up' in={slideChange1} timeout={1500}>
-                            <Button variant="contained">Saiba mais</Button>
                         </Slide>
 
                     </div>
@@ -104,7 +105,7 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange2} timeout={1500}>
-                            <Typography variant='h2' component='h2' sx={StyledCarouselInnerH2}>Peça um modelo para seu negócio sem compromisso.</Typography>
+                            <StyledCarouselInnerH2>Peça um modelo para seu negócio sem compromisso.</StyledCarouselInnerH2>
                         </Slide>
                         <Slide direction="down" in={slideChange2} timeout={1500}>
                             <Typography variant='p' component='p'>Nós escolhemos as melhores imagens em bancos de imagens mais usados.</Typography>

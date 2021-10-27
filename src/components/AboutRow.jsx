@@ -41,7 +41,6 @@ export default function AboutRow() {
                     <div className="row content">
                     <div className="col-lg-6">
                         <h2><Logo cinza fontSize='48px' /></h2>
-                        <h3 style={AboutRowStyledH3}>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
                     </div>
                     <DivUlinContainerStyled className="col-lg-6 pt-4 pt-lg-0">
                         <p>

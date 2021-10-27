@@ -60,26 +60,26 @@ export default function Features() {
                         value={value}
                         onChange={handleChange}
                     >
-                        <Tab label='Unde praesentium sed' id={0} />
-                        <Tab label='Modi sit est' id={1} />
-                        <Tab label='Modi sit est' id={2} />
+                        <Tab label='SER ENCONTRADO NO GOOGLE' id={0} />
+                        <Tab label='BAIXO INVESTIMENTO' id={1} />
+                        <Tab label='Transmite confiança e credibilidade' id={2} />
                     </Tabs>
                 </div>
                 <div className="col-lg-9 mt-4 mt-lg-0">
                     <Conteudo value={value} index={0}>
-                        <h3 style={H3Style}>Architecto ut aperiam autem id</h3>
-                        <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                        <p style={PStyle} >Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                        <h3 style={H3Style}>SER ENCONTRADO NO GOOGLE</h3>
+                        <p style={PStyle} className="fst-italic">O google é um meio de busca que a maioria das pessoas buscam quando querem saber informações sobre um produto ou serviço.</p>
+                        <p style={PStyle} >MAIS VISIBILIDADE: Mesmo para empresas pequenas ou negócios locais, um site trará mais visibilidade, já que o alcance geográfico dele é bem maior. <br /> MAIS PROFISSIONAL: Um site transmite uma imagem muito mais profissional, o que é uma excelente maneira de gerar mais confiança e credibilidade para sua empresa.</p>
                     </Conteudo>
                     <Conteudo value={value} index={1}>
-                        <h3 style={H3Style}>Et blanditiis nemo veritatis excepturi</h3>
-                        <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                        <p style={PStyle}>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                        <h3 style={H3Style}>BAIXO INVESTIMENTO</h3>
+                        <p style={PStyle} className="fst-italic">Criar um site para o seu negócio não é custo, e sim investimento, pois tem excelente relação custo x benefício, se comparado com qualquer outra mídia convencional.</p>
+                        <p style={PStyle}>MAIS CLIENTES, MAIS VENDAS: Levando em consideração que um site traz mais visibilidade, autoridade, profissionalismo e tem um alcance enorme, ele se torna uma ótima vitrine virtual. É possível expor e vender seus produtos e serviços a qualquer hora e para qualquer lugar do mundo. </p>
                     </Conteudo>
                     <Conteudo value={value} index={2}>
-                        <h3 style={H3Style}>Et blanditiis nemo veritatis excepturi</h3>
-                        <p style={PStyle} className="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                        <p style={PStyle}>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                        <h3 style={H3Style}>Transmite confiança e credibilidade</h3>
+                        <p style={PStyle} className="fst-italic">Confiança é a chave para as negociações entre empresa e consumidor.</p>
+                        <p style={PStyle}> E se o seu negócio tem uma boa imagem no ambiente digital, com um site funcional e com bom design, você passa credibilidade e conquista muito mais a confiança do seu público. Por isso, hoje em dia, os consumidores já esperam que as empresas tenham um site próprio. Assim eles conseguem obter mais informações e se preparar melhor para uma compra. Se eles chegam no seu site e dão de cara com depoimentos (principalmente em vídeo), uma boa quantidade de curtidas, comentários positivos e outras provas sociais de que o seu produto ou serviço é de qualidade, então… Você ganha muito mais moral com o seu potencial cliente. </p>
                     </Conteudo>
                 </div>
             </div>

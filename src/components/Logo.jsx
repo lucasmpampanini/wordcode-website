@@ -5,11 +5,13 @@ import React from 'react'
 
 
 
-export default function Logo({branco, cinza, fontSize}) {
+export default function Logo({branco, cinza, fontSize, fontSizeDow}) {
 
     const colorLogo = cinza || !branco ?  theme.palette.secondary.main : '#fff'
 
-    const fontSizeLogo = !fontSize ? '24px' : fontSize
+    const fontSizeDowMd = !fontSizeDow ? 24 : fontSizeDow
+
+    const fontSizeUpMd = !fontSize ? 24 : fontSize
     
     const LogoStyled = styled('a')(({ theme }) => ({
         margin: '0 0 20px 0',
@@ -21,7 +23,10 @@ export default function Logo({branco, cinza, fontSize}) {
             color: colorLogo,
         },
         '& > h3': {
-            fontSize: fontSizeLogo,
+            [theme.breakpoints.down('md')]: {
+                fontSize: fontSizeDowMd,
+            },
+            fontSize: fontSizeUpMd,
             fontFamily: theme.typography.fontFamilyLogo,
             fontWeight: 700,
 
