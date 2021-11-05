@@ -19,7 +19,7 @@ const StyledCarouselInner = {
     height: '100vh',
     overflow: 'hidden',
     position: 'relative',
-    backgroundColor: 'rgba(30, 35, 40, 0.1)', 
+    // backgroundColor: 'rgba(30, 35, 40, 0.6)', 
     zIndex: 1,
     display: 'flex',
     justifyContent: 'center',
