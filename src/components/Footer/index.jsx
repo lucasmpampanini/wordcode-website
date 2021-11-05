@@ -10,11 +10,13 @@ const FooterStyle = {
     color: '#fff',
     fontSize: '14px',
     marginTop: 80,
+
 }
 
 const FooterTopStyle = {
     background: '#515d6a',
     padding: '60px 0 30px 0',
+
 }
 
 const FooterInfoStyled = styled('div')(({ theme }) => ({
@@ -25,6 +27,7 @@ const FooterInfoStyled = styled('div')(({ theme }) => ({
         marginBottom: 0,
         fontFamily: theme.typography.fontFamily[1],
         color: '#fff',
+
     },
 
 }));
@@ -106,16 +109,23 @@ export default function Footer() {
     return (
         <footer style={FooterStyle}>
             <div style={FooterTopStyle}>
-            <div className="container">
+            <div 
+                className="container"
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}
+            >
                 <div className="row">
 
-                <div className="col-lg-3 col-md-6">
+                <div className="col-lg-6 col-md-6">
                     <FooterInfoStyled >
                         <Logo branco fontSize='32px'/>
                         <p>
                             
-                            <strong>WhatsApp:</strong> (11) 94683-4920<br/>
-                            <strong>Email:</strong> contato@wordcode.com.br<br/>
+                            <strong>Ligar:</strong> (11) 94683-4920<br/>
+                            <strong>Enviar email:</strong> contato@wordcode.com.br<br/>
                         </p>
                         <SocialLinksStyle className="mt-3">
                             <a href="#" className="skype"><FaSkype style={IconStyle}/></a>
@@ -124,33 +134,14 @@ export default function Footer() {
                     </FooterInfoStyled>
                 </div>
 
-                <FooterLinksStyled className="col-lg-2 col-md-6">
-                    <h4>Links Úteis</h4>
-                    <ul>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="/">Home</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="">Termos gerais de serviço</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="">Politica de proteção de dados</a></li>
-                    </ul>
-                </FooterLinksStyled>
 
-                <FooterLinksStyled className="col-lg-3 col-md-6">
-                    <h4>Nossos Serviços</h4>
-                    <p>Entre em contato</p>
-                    <ul>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Sitemas Web</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Desenvolvimento Web</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Automatização De Processos</a></li>
-                        <li><FaChevronRight style={IconLiStyle}/> <a href="#">Raspagem De Dados Da Web</a></li>
-                    </ul>
-                </FooterLinksStyled>
 
-                <FooterLinksStyled className="col-lg-3 col-md-6">
+                <FooterLinksStyled className="col-lg-6 col-md-6">
                     <h4>Entre em contato pelo WhatsApp</h4>
                     <p>É só direcionar a câmera do seu celular para o código QR</p>
                     <img src="/qrwa.jpeg" alt="" />
                 </FooterLinksStyled>
 
-               
 
                 </div>
             </div>

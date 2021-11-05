@@ -8,42 +8,29 @@ export default function Pricing() {
                 <PricingCard  
                     obj={{
                         titulo: 'Site Institucional',
-                        preco: 250,
+                        preco: 290,
                     }}
                     lista={[  
+                        'Dominio .com.br*',
                         'Certificado SSL', 
-                        'Dominio .online*', 
-                        'Dominio .xyz*', 
-                        'Dominio .tech*', 
-                        'Dominio .site*', 
-                        'Dominio .space*',
-                        'Dominio .website*',
-                        'Dominio .store*', 
                         'Responsivo', 
                         '1 Ano de Hospedagem', 
                         'Botão WhatsApp', 
                         'Integração Redes Sociais', 
                         'Banco de Imagens'
                     ]} 
-                    listaNa={['Dominio .com.br']}
+                    listaNa={['E-mail']}
                     
                 />
 
                 <PricingCard  
                     obj={{
-                        titulo: 'Site Institucional + Blog',
-                        preco: 450,
+                        titulo: 'Site Administrável',
+                        preco: 490,
                     }}
                     lista={[ 
                         'Certificado SSL',
-                        'Dominio .com.br*', 
-                        'Dominio .online*', 
-                        'Dominio .xyz*', 
-                        'Dominio .tech*', 
-                        'Dominio .site*', 
-                        'Dominio .space*',
-                        'Dominio .website*',
-                        'Dominio .store*', 
+                        'Dominio .com.br*',
                         'Responsivo', 
                         '1 Ano de Hospedagem', 
                         'Banco de Imagens', 
@@ -57,20 +44,12 @@ export default function Pricing() {
 
                 <PricingCard  
                     obj={{
-                        titulo: 'Site + Sistema Web para Imobiliária',
-                        preco: 999,
+                        titulo: 'Site Institucional + Blog',
+                        preco: 490,
                     }}
                     lista={[ 
                         'Certificado SSL',
-                        'Dominio .com.br*',
-                        'Dominio .com*',  
-                        'Dominio .online*', 
-                        'Dominio .xyz*', 
-                        'Dominio .tech*', 
-                        'Dominio .site*', 
-                        'Dominio .space*',
-                        'Dominio .website*',
-                        'Dominio .store*', 
+                        'Dominio .com.br*', 
                         'Responsivo', 
                         '1 Ano de Hospedagem', 
                         'Banco de Imagens', 
