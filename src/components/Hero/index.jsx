@@ -65,12 +65,6 @@ export default function Hero() {
         <Box component='section' sx={StyledHero}>
             <Carousel as='div' activeIndex={index} onSelect={handleSelect} fade pause={false}>
                 <Carousel.Item>
-                    <Image 
-                        src="/hero/slide/slide-1.jpg"
-                        layout="fill"
-                        objectFit="cover"
-                        objectPosition="center"
-                    />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange0} timeout={1500}>
                             <StyledCarouselInnerH2>Bem-Vindo a <Logo branco fontSizeDow={30} fontSize={60}/> </StyledCarouselInnerH2>
@@ -78,6 +72,12 @@ export default function Hero() {
                        
                        
                     </div>
+                    <Image 
+                        src="/hero/slide/slide-1.jpg"
+                        layout="fill"
+                        objectFit="cover"
+                        objectPosition="center"
+                    />
                 </Carousel.Item>
                 <Carousel.Item>
                     <Image 
