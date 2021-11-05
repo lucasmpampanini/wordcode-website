@@ -102,6 +102,14 @@ const CopyrightsStyle = {
     paddingTop: '30px',
 }
 
+const LinkInFooter = styled('a')(({ theme }) => ({
+    color: '#fff',
+    textDecoration: 'none',
+    ':hover': {
+        color: '#b9b9b9',
+        textDecoration: 'none',
+    }
+}));
 
 export default function Footer() {
 
@@ -124,12 +132,21 @@ export default function Footer() {
                         <Logo branco fontSize='32px'/>
                         <p>
                             
-                            <strong>Ligar:</strong> (11) 94683-4920<br/>
-                            <strong>Enviar email:</strong> contato@wordcode.com.br<br/>
+                            <LinkInFooter 
+                                href="tel:+5511946834920"
+                            > 
+                                <strong>Ligar:</strong> (11) 94683-4920<br/>
+                            </LinkInFooter>
+                            <LinkInFooter
+                               href="mailto:contato@wordcode.com.br" 
+                            >
+                               <strong>Enviar email:</strong> contato@wordcode.com.br<br/>
+
+                            </LinkInFooter>
                         </p>
                         <SocialLinksStyle className="mt-3">
-                            <a href="#" className="skype"><FaSkype style={IconStyle}/></a>
-                            <a href="#" className="linkedin"><FaLinkedinIn style={IconStyle}/></a>
+                            <a href="https://join.skype.com/invite/sfU4cW76Jpwy" className="skype"><FaSkype style={IconStyle}/></a>
+                            <a href="https://www.linkedin.com/in/lucas-pampanini-9881281a5" className="linkedin"><FaLinkedinIn style={IconStyle}/></a>
                         </SocialLinksStyle>
                     </FooterInfoStyled>
                 </div>
@@ -138,8 +155,8 @@ export default function Footer() {
 
                 <FooterLinksStyled className="col-lg-6 col-md-6">
                     <h4>Entre em contato pelo WhatsApp</h4>
-                    <p>É só direcionar a câmera do seu celular para o código QR</p>
-                    <img src="/qrwa.jpeg" alt="" />
+                    <p>É só direcionar a câmera do seu celular para o código QR ou clicar na imagem</p>
+                    <a href="http://wa.me/5511946834920" target="_blank" rel="noopener noreferrer"> <img src="/qrwa.jpeg" alt="" /></a>
                 </FooterLinksStyled>
 
 
