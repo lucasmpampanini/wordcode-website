@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { styled } from '@mui/system'
 import theme from '../../../theme'
 
@@ -95,20 +95,31 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
     const itens = lista.map((elemnet, i) => <li key={i}>{elemnet}</li>)
     const itensNa = typeof(listaNa) === 'object' ? listaNa.map((elemnet, i) => <li className="na" key={i}>{elemnet}</li>) : []
 
-    function SomaEmail(somar) {
-        const novoPreco = obj.preco
-        somar ? obj.preco = novoPreco + 30 : obj.preco = novoPreco - 30
-        
-        return document.getElementById(obj.titulo).innerHTML = `<sup>R$</sup>${obj.preco}<span> / Uni</span>`
+    const [valor, setValor] = useState(obj.preco)
+    const [textoValor, setTextoValor] = useState(<h4 id={obj.titulo}><sup>R$</sup>{obj.preco}<span> / Uni</span></h4>)
+    const [linkWhatsApp, setLinkWhatsApp] = useState(<a target="_blank" href={urlWhatsApp()} className="btn-buy">Pedir Modelo Sem Compromisso</a>)
+    const [stateChecked, setstateChecked] = useState(false)
 
 
+    useEffect(() => {
+
+        setLinkWhatsApp(<a target="_blank" href={urlWhatsApp()} className="btn-buy">Pedir Modelo Sem Compromisso</a>)
+        setTextoValor(<h4 id={obj.titulo}><sup>R$</sup>{valor}<span> / Uni</span></h4>)
+
+    }, [stateChecked])
+
+    function urlWhatsApp() {
+        const emailOpcional =  valor === obj.preco ? 'sem' : 'com'
+        return `https://wa.me/5511946834920?text=Olá%20eu%20gostaria%20do%20${obj.titulo}%20R$${valor},00%20${emailOpcional}%20E-mail`
     }
-
+   
+   
+    
     return (
         <div className="col-lg-3 col-md-6">
             <BoxStyled >
               <h3>{obj.titulo}</h3>
-              <h4 id={obj.titulo}><sup>R$</sup>{obj.preco}<span> / Uni</span></h4>
+              {textoValor}
               <ul>
                 {itens}
                 {itensNa}
@@ -116,13 +127,17 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
                     type="checkbox" 
                     name={obj.titulo} 
                     id={obj.titulo} 
-                    value={30}
-                    onChange={(e)=>{SomaEmail(e.target.checked);}}
+                    value={obj.preco}
+                    defaultChecked={stateChecked}
+                    onChange={(e)=>{
+                        e.target.checked ? setValor(obj.preco+30) : setValor(obj.preco); 
+                        setstateChecked(e.target.checked)
+                    }}
                 /> Um Email 1gb + R$30
 
               </ul>
               <div className="btn-wrap">
-                <a href="#" className="btn-buy">Pedir Modelo Sem Compromisso</a>
+                {linkWhatsApp}
                 <p>*Aplicável somente no primeiro ano</p>
               </div>
             </BoxStyled>

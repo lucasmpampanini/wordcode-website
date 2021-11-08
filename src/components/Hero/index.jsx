@@ -88,7 +88,7 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange1} timeout={1500}>
-                            <StyledCarouselInnerH2>Site Institucional a partir de R$ 250</StyledCarouselInnerH2>
+                            <StyledCarouselInnerH2>Site Institucional a partir de R$ 290</StyledCarouselInnerH2>
                         </Slide>
                         <Slide direction="down" in={slideChange1} timeout={1500}>
                             <Typography variant='p' component='p' >Sites responsivos, com botão de interação ao whatsapp e outras redes sociais.</Typography>
@@ -111,7 +111,7 @@ export default function Hero() {
                             <Typography variant='p' component='p'>Nós escolhemos as melhores imagens em bancos de imagens mais usados.</Typography>
                         </Slide>
                         <Slide direction='up' in={slideChange2} timeout={1500}>
-                            <Button style={{margin: 20, color: '#fff'}} variant="contained">fale agora pelo whatsapp</Button>
+                            <Button style={{margin: 20, color: '#fff'}} variant="contained" href="http://wa.me/5511946834920" target="_blank">fale agora pelo whatsapp</Button>
                         </Slide>
                     </div>
                 </Carousel.Item>
