@@ -95,14 +95,31 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
     const itens = lista.map((elemnet, i) => <li key={i}>{elemnet}</li>)
     const itensNa = typeof(listaNa) === 'object' ? listaNa.map((elemnet, i) => <li className="na" key={i}>{elemnet}</li>) : []
 
+    function SomaEmail(somar) {
+        const novoPreco = obj.preco
+        somar ? obj.preco = novoPreco + 30 : obj.preco = novoPreco - 30
+        
+        return document.getElementById(obj.titulo).innerHTML = `<sup>R$</sup>${obj.preco}<span> / Uni</span>`
+
+
+    }
+
     return (
         <div className="col-lg-3 col-md-6">
             <BoxStyled >
               <h3>{obj.titulo}</h3>
-              <h4><sup>R$</sup>{obj.preco}<span> / Uni</span></h4>
+              <h4 id={obj.titulo}><sup>R$</sup>{obj.preco}<span> / Uni</span></h4>
               <ul>
                 {itens}
                 {itensNa}
+                <input 
+                    type="checkbox" 
+                    name={obj.titulo} 
+                    id={obj.titulo} 
+                    value={30}
+                    onChange={(e)=>{SomaEmail(e.target.checked);}}
+                /> Um Email 1gb + R$30
+
               </ul>
               <div className="btn-wrap">
                 <a href="#" className="btn-buy">Pedir Modelo Sem Compromisso</a>

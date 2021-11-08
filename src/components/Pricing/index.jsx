@@ -16,10 +16,10 @@ export default function Pricing() {
                         'Responsivo', 
                         '1 Ano de Hospedagem', 
                         'Botão WhatsApp', 
-                        'Integração Redes Sociais', 
-                        'Banco de Imagens'
+                        'Integração Redes Sociais',                     
                     ]} 
-                    listaNa={['E-mail']}
+                    listaNa={['Conteúdo editorial']}
+                    destacar
                     
                 />
 
@@ -32,12 +32,13 @@ export default function Pricing() {
                         'Certificado SSL',
                         'Dominio .com.br*',
                         'Responsivo', 
-                        '1 Ano de Hospedagem', 
-                        'Banco de Imagens', 
+                        '1 Ano de Hospedagem',  
                         'Botão WhatsApp', 
                         'Blog', 
-                        'Area de administração']} 
-                    destacar
+                        'Area de administração'
+                    ]}
+                    listaNa={['Conteúdo editorial']} 
+                    
                     
                 />
 
@@ -51,11 +52,13 @@ export default function Pricing() {
                         'Certificado SSL',
                         'Dominio .com.br*', 
                         'Responsivo', 
-                        '1 Ano de Hospedagem', 
-                        'Banco de Imagens', 
+                        '1 Ano de Hospedagem',  
                         'Botão WhatsApp', 
                         'Blog', 
-                        'Area de administração']} 
+                        'Area de administração'
+                    ]}
+                    listaNa={['Conteúdo editorial']}
+ 
                     
                     
                 />
