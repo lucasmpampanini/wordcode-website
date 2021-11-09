@@ -110,7 +110,7 @@ export default function NavBarMobile() {
                         <LiStyle><LinkNavBarStyle href="#portfolioSection">Portfólio</LinkNavBarStyle></LiStyle>
                         {/* <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle> */}
                         {/* <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle> */}
-                        <LiStyle  style={{marginTop: 20}}><Button href='https://web.whatsapp.com/send?phone=5511946834920' style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
+                        <LiStyle  style={{marginTop: 20}}><Button href='https://wa.me/5511946834920' style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
                     </ul>
                 </Box>
                 

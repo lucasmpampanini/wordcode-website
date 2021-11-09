@@ -62,7 +62,7 @@ export default function NavBar() {
                 <LiStyle><LinkNavBarStyle href="#portfolioSection">Portfólio</LinkNavBarStyle></LiStyle>
                 {/* <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle> */}
                 {/* <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle> */}
-                <LiStyle><Button target='_blank' href='https://web.whatsapp.com/send?phone=5511946834920' style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
+                <LiStyle><Button target='_blank' href='https://wa.me/5511946834920' style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
             </ul>
         </Box>
     )
