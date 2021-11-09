@@ -18,7 +18,12 @@ export default function Pricing() {
                         'Botão WhatsApp', 
                         'Integração Redes Sociais',                     
                     ]} 
-                    listaNa={['Conteúdo editorial']}
+                    listaNa={[
+                        'Blog',
+                        'Area de administração',
+                        'Conteúdo editorial',
+                
+                    ]}
                     destacar
                     
                 />
@@ -29,11 +34,12 @@ export default function Pricing() {
                         preco: 490,
                     }}
                     lista={[ 
-                        'Certificado SSL',
                         'Dominio .com.br*',
+                        'Certificado SSL',
                         'Responsivo', 
                         '1 Ano de Hospedagem',  
                         'Botão WhatsApp', 
+                        'Integração Redes Sociais',
                         'Blog', 
                         'Area de administração'
                     ]}
@@ -49,11 +55,12 @@ export default function Pricing() {
                         preco: 490,
                     }}
                     lista={[ 
-                        'Certificado SSL',
                         'Dominio .com.br*', 
+                        'Certificado SSL',
                         'Responsivo', 
                         '1 Ano de Hospedagem',  
                         'Botão WhatsApp', 
+                        'Integração Redes Sociais',
                         'Blog', 
                         'Area de administração'
                     ]}

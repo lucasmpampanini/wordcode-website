@@ -1,4 +1,4 @@
-import { Box } from '@mui/system'
+import { Box, padding } from '@mui/system'
 import React, { useEffect, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import Image from 'next/image'
@@ -34,7 +34,8 @@ const StyledCarouselInner = {
 
 const StyledCarouselInnerH2 =  styled('h2')(({ theme }) => ({
     [theme.breakpoints.down('md')]: {
-        fontSize: '28px'
+        fontSize: '28px',
+        padding: '0 5px 0 5px'
     } ,
     fontFamily: theme.typography.fontFamily[1],
     marginBottom: '20px',
@@ -42,6 +43,12 @@ const StyledCarouselInnerH2 =  styled('h2')(({ theme }) => ({
     fontWeight: 700,
 }))
 
+
+const StyledCarouselInnerP =  styled('p')(({ theme }) => ({
+    [theme.breakpoints.down('md')]: {
+        padding: '0 5px 0 5px'
+    } ,
+}))
 
 export default function Hero() {
     const [slideChange0, setSlideChange0] = useState(true)
@@ -91,7 +98,7 @@ export default function Hero() {
                             <StyledCarouselInnerH2>Site Institucional a partir de R$ 290</StyledCarouselInnerH2>
                         </Slide>
                         <Slide direction="down" in={slideChange1} timeout={1500}>
-                            <Typography variant='p' component='p' >Sites responsivos, com botão de interação ao whatsapp e outras redes sociais.</Typography>
+                            <StyledCarouselInnerP variant='p' component='p' >Sites responsivos, com botão de interação ao whatsapp e outras redes sociais.</StyledCarouselInnerP>
                         </Slide>
 
                     </div>
@@ -108,7 +115,7 @@ export default function Hero() {
                             <StyledCarouselInnerH2>Peça um modelo para seu negócio sem compromisso.</StyledCarouselInnerH2>
                         </Slide>
                         <Slide direction="down" in={slideChange2} timeout={1500}>
-                            <Typography variant='p' component='p'>Nós escolhemos as melhores imagens em bancos de imagens mais usados.</Typography>
+                            <StyledCarouselInnerP variant='p' component='p'>Nós escolhemos as melhores imagens em bancos de imagens mais usados.</StyledCarouselInnerP>
                         </Slide>
                         <Slide direction='up' in={slideChange2} timeout={1500}>
                             <Button style={{margin: 20, color: '#fff'}} variant="contained" href="http://wa.me/5511946834920" target="_blank">fale agora pelo whatsapp</Button>
@@ -121,36 +128,3 @@ export default function Hero() {
 
     )
 }
-
-
-
-
-// <Box component='div' sx={StyledCarousel} id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-//                 <ol className="carousel-indicators" id="hero-carousel-indicators"></ol>
-//                 <Box component='div' sx={StyledCarousel} className="carousel-inner">
-//                     <Box component='div' sx={StyledCarouselItem} className="carousel-item" style={{background: `url(${'/hero/slide/slide-1.jpg'})`}}>
-//                         <div className="carousel-container">
-                           
-//                         </div>
-//                     </Box>
-
-//                     <Box component='div' sx={StyledCarouselItem} className="carousel-item" style={{background: `url(${'/hero/slide/slide-2.jpg'})`}}>
-//                         <div className="carousel-container">
-                            
-//                         </div>
-//                     </Box>
-
-//                     <Box component='div' sx={StyledCarouselItem} className="carousel-item" style={{background: `url(${'/hero/slide/slide-3.jpg'})`}}>
-//                         <div className="carousel-container">
-                            
-//                         </div>
-//                     </Box>
-//                 </Box>
-//                 <a className="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-//                     <span className="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-//                 </a>
-
-//                 <a className="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-//                     <span className="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-//                 </a>
-//             </Box>

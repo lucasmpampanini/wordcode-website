@@ -55,7 +55,7 @@ export default function NavBar() {
     return (
         <Box component='nav' sx={NavStyle}>
             <ul>
-                <LiStyle><LinkNavBarStyle href="#servicesSection">O que inclui nos sites</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="#servicesSection">O que inclui nos sites?</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="#featuresSection">Vantagens</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="#pricingSection">Preço</LinkNavBarStyle></LiStyle>
                 {/* <LiStyle><LinkNavBarStyle href="#aboutSection">Sobre Nós</LinkNavBarStyle></LiStyle> */}
