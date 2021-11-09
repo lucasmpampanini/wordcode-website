@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 import { styled } from '@mui/system'
 import theme from '../../../theme'
-
+import {BsCheckSquare, BsDashSquare} from 'react-icons/bs'
 
 
 
@@ -70,6 +71,15 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
             background: '#f8f8f8',
             textAlign: 'center',
         },
+        '& > .btn-wrap > h3': {
+            color: '#777777',
+            background: '#f8f8f8',
+            fontWeight: 400,
+            margin: '-20px -20px 20px -20px',
+            padding: '20px 15px',
+            fontSize: '16px',
+            fontWeight: 600,
+        },
         '& > .btn-wrap > p': {
             fontSize: '12px',
         },
@@ -92,8 +102,8 @@ export default function PricingCard({obj, lista, listaNa, destacar}) {
         },
     }))
     
-    const itens = lista.map((elemnet, i) => <li key={i}>{elemnet}</li>)
-    const itensNa = typeof(listaNa) === 'object' ? listaNa.map((elemnet, i) => <li className="na" key={i}>{elemnet}</li>) : []
+    const itens = lista.map((elemnet, i) => <li key={i}><BsCheckSquare color={theme.palette.primary.main}/> {elemnet}</li>)
+    const itensNa = typeof(listaNa) === 'object' ? listaNa.map((elemnet, i) => <li className="na" key={i}><BsDashSquare color="red" /> {elemnet}</li>) : []
 
     const [valor, setValor] = useState(obj.preco)
     const [textoValor, setTextoValor] = useState(<h4 id={obj.titulo}><sup>R$</sup>{obj.preco}<span> / Uni</span></h4>)

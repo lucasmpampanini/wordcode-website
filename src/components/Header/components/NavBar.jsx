@@ -55,11 +55,11 @@ export default function NavBar() {
     return (
         <Box component='nav' sx={NavStyle}>
             <ul>
-                <LiStyle><LinkNavBarStyle href="#servicesSection">Site Institucional</LinkNavBarStyle></LiStyle>
+                <LiStyle><LinkNavBarStyle href="#servicesSection">O que inclui nos sites</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="#featuresSection">Vantagens</LinkNavBarStyle></LiStyle>
                 <LiStyle><LinkNavBarStyle href="#pricingSection">Preço</LinkNavBarStyle></LiStyle>
                 {/* <LiStyle><LinkNavBarStyle href="#aboutSection">Sobre Nós</LinkNavBarStyle></LiStyle> */}
-                {/* <LiStyle><LinkNavBarStyle href="/portfolio">Portfolio</LinkNavBarStyle></LiStyle> */}
+                <LiStyle><LinkNavBarStyle href="#portfolioSection">Portfólio</LinkNavBarStyle></LiStyle>
                 {/* <LiStyle><LinkNavBarStyle href="">Blog</LinkNavBarStyle></LiStyle> */}
                 {/* <LiStyle><LinkNavBarStyle href="/entre_em_contato">Contato</LinkNavBarStyle></LiStyle> */}
                 <LiStyle><Button target='_blank' href='https://web.whatsapp.com/send?phone=5511946834920' style={{marginLeft: 20, color: '#fff', fontWeight: 'bold'}} variant="contained">WhatsApp</Button></LiStyle>
