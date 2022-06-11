@@ -8,7 +8,7 @@ export default function Pricing() {
                 <PricingCard  
                     obj={{
                         titulo: 'Site Institucional',
-                        preco: 290,
+                        preco: '',
                     }}
                     lista={[  
                         'Dominio .com.br*',
@@ -31,7 +31,7 @@ export default function Pricing() {
                 <PricingCard  
                     obj={{
                         titulo: 'Site Administrável',
-                        preco: 490,
+                        preco: '',
                     }}
                     lista={[ 
                         'Dominio .com.br*',
@@ -52,7 +52,7 @@ export default function Pricing() {
                 <PricingCard  
                     obj={{
                         titulo: 'Site Institucional + Blog',
-                        preco: 490,
+                        preco: '',
                     }}
                     lista={[ 
                         'Dominio .com.br*', 
