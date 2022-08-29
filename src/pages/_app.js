@@ -18,7 +18,7 @@ export default function MyApp(props) {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>WordCode</title>
-        <meta content="Criamos sites responsivos, seguros e com designer moderno. Por um preço justo você já marca presença na internet. A partir de R$290 com domínio .com.br e hospedagem." name="description" />
+        <meta content="Criamos sites responsivos, seguros e com designer moderno. Por um preço justo você já marca presença na internet.  Domínio .com.br e hospedagem." name="description" />
 
         <link href="/logo-105-wordcode.png" rel="icon" />
         <link href="/logo-105-wordcode.png" rel="apple-touch-icon" />

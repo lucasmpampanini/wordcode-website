@@ -95,7 +95,7 @@ export default function Hero() {
                     />
                     <div style={StyledCarouselInner}>
                         <Slide direction='down' in={slideChange1} timeout={1500}>
-                            <StyledCarouselInnerH2>Site Institucional a partir de R$ 290</StyledCarouselInnerH2>
+                            <StyledCarouselInnerH2>Site Institucional</StyledCarouselInnerH2>
                         </Slide>
                         <Slide direction="down" in={slideChange1} timeout={1500}>
                             <StyledCarouselInnerP variant='p' component='p' >Sites responsivos, com botão de interação ao whatsapp e outras redes sociais.</StyledCarouselInnerP>
